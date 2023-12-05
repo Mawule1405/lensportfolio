@@ -1,0 +1,606 @@
+/*
+Cette portion de code concerne tous les pages du sites
+Donc il ne sera plus applique dans les autres cas: il sagit de:
+  -la barre de navigation header
+  -le footer
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*Ceci est la mise en page de la barre de menu*/
+.header-bar,
+.footer-bar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bar img,
+.footer-bar img {
+    margin: 18px 0 18px 49px;
+}
+
+
+.header-bar nav {
+    margin: 18px 143px 18px 0;
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bar nav a {
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.8rem;
+    color: #242424;
+    text-decoration: none;
+}
+
+.header-bar nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*Ceci est la mise en page du footer*/
+
+.footer-bar .social {
+    margin-right: 123px;
+}
+
+/*Cette deuxieme partie du code concene uniquement les elements
+de la page accueil. Vue qu'ils different des elements des autres
+pages
+*/
+
+
+/*Mise en page de la section une du main*/
+/*Mise en page de la classe text*/
+
+.presentation {
+    height: 653px;
+    background: #1F2039;
+    display: flex;
+    justify-content: center;
+    gap: 152px;
+    align-items: center;
+
+}
+
+.presentation .text {
+    width: 409px;
+    height: 307px;
+    transform: translateY(-80px);
+}
+
+.presentation .text h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+}
+
+.presentation .text p {
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F9F8FF;
+
+}
+
+.presentation .text .lien {
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #8E86B5 0%, #ACAEED 100%);
+
+
+}
+
+.presentation .text .lien a {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 5px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.presentation .text .lien a:hover {
+    color: #000;
+}
+
+/*Mise en page de la classe profil-photo*/
+.presentation .profil-photo .embellissage {
+    transform: translate(-50px, 25px);
+}
+
+/*Mise en forme de la deuxieme section*/
+
+.dernieres-photos {
+    text-align: center;
+}
+
+.dernieres-photos h2 {
+    margin: 79px 0;
+}
+
+.dernieres-photos .rang img {
+    margin: 8px 8px;
+}
+
+.dernieres-photos .lien {
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    margin: 16px 0 10px 0;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #8E86B5 0%, #ACAEED 100%);
+
+}
+
+.dernieres-photos .rang img:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.dernieres-photos .lien a {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 3px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dernieres-photos .lien a:hover {
+    color: #000;
+}
+
+/*mise en forme de la troisieme section qui consiste a envoyer 
+de message*/
+
+.send-message {
+    text-align: center;
+    height: 721px;
+    background: #1F2039;
+}
+
+.send-message h2 {
+    padding: 65px 0;
+    font-family: Monserat, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #A5B4FC;
+}
+
+.formulaire {
+    width: 525px;
+    height: 368px;
+    border: 1px;
+    border-radius: 3px;
+    background: #1F2039;
+    margin: 0 458px;
+
+
+
+}
+
+.formulaire .info-perso {
+    display: flex;
+    gap: 19px;
+
+}
+
+
+
+.formulaire .info-perso input {
+    width: 253px;
+    height: 62px;
+    margin: 10px 0;
+}
+
+.formulaire .info-perso label {
+    text-align: left;
+    font-family: Monrape, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F9F8FF;
+    float: left;
+}
+
+
+.formulaire .message-send {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+
+}
+
+.formulaire .message-send textarea {
+    width: 525px;
+    height: 207px;
+    font-family: Monrape, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+
+}
+
+.formulaire .message-send label {
+    text-align: left;
+    font-family: Monrape, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F9F8FF;
+    float: left;
+}
+
+.formulaire .envoie input {
+    width: 216px;
+    height: 65px;
+    border-radius: 50px;
+    margin: 44px auto;
+    background: linear-gradient(180deg, #8E86B5 0%, #ACAEED 100%);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+
+}
+
+
+/*Personnalisation de la page de about qui parle de
+l'agence*/
+
+.main {
+    height: 1474px;
+    margin: 0;
+    background: #1F2039;
+    text-align: center;
+
+}
+
+.main .photos {
+    padding-top: 140px;
+    height: 628px;
+}
+
+.main .photos :first-child {
+    position: sticky;
+    z-index: 2;
+}
+
+.main .photos :last-child {
+    position: sticky;
+    display: inline;
+    transform: translate(270px, -380px);
+    z-index: 1;
+}
+
+.main .about-title {
+    margin-top: 79px;
+    padding-left: 300px;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+    width: 602px;
+    height: 67px;
+
+}
+
+.main .about-title::first-letter {
+    text-transform: uppercase;
+
+}
+
+
+.main .texte {
+    text-align: left;
+    display: inline-block;
+}
+
+.texte .description {
+    width: 516px;
+    height: 187px;
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F9F8FF;
+
+
+}
+
+.texte .liste {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: left;
+    color: #F9F8FF;
+
+}
+
+.texte img {
+    position: absolute;
+    transform: translate(300px, -400px);
+}
+
+
+
+.texte~.lien {
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    margin: 16px 0 10px 0;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #8E86B5 0%, #ACAEED 100%);
+    transform: translate(-300px, 200px);
+}
+
+.texte~.lien a {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 3px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.texte~.lien a:hover {
+    color: #000;
+}
+
+/*Mise en forme concernant specialement les elements de la page
+Tarifs*/
+
+/*mise en forme de l'entete*/
+.tarifs .entete {
+    display: flex;
+    justify-content: space-between;
+    padding: 145px 200px 96px 200px;
+    align-items: center;
+}
+
+.tarifs .entete h1 {
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+}
+
+.tarifs .entete span {
+    display: inline-block;
+    width: 221px;
+    height: 62px;
+    padding: 21px, 38px, 21px, 38px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #8E86B5 0%, #ACAEED 100%);
+
+
+
+}
+
+.tarifs .entete span a {
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+    text-decoration: none;
+    margin: 20px auto;
+
+}
+
+.tarifs .entete span a:hover {
+    color: #000;
+}
+
+/*mise en formes des offres*/
+.les-offres {
+    display: flex;
+    justify-content: center;
+    gap: 103px;
+
+}
+
+.les-offres .offre {
+    width: 278px;
+    height: 295px;
+    border-right: 1px solid #A5B4FC;
+    border-bottom: 1px solid #A5B4FC;
+}
+
+.les-offres .offre h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+
+}
+
+.les-offres .offre h3+p {
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+    width: 240px;
+
+}
+
+.les-offres .offre h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+}
+
+.les-offres .offre p:last-child {
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+
+}
+
+.studio-pro {
+    padding: 50px 200px 0 200px;
+}
+
+.studio-pro h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+}
+
+.tableau {
+    border-collapse: collapse;
+}
+
+.tableau th,
+.tableau td {
+    border: 1px solid #A5B4FC;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFF;
+
+}
+
+
+.tableau tr td {
+    width: 381px;
+    height: 145px;
+}
+
+.tableau tr td:first-child {
+    width: 278px;
+}
+
+.tableau thead td {
+    height: 41px;
+}
+
+/*Mise en forme du corps de la page portfolio pour
+la presentation des differentes images 
+ - paysages
+ - portraits*/
+
+.portfolio {
+    padding-bottom: 50px;
+}
+
+.portfolio .entete {
+    background: #1F2039;
+    height: 307px;
+
+}
+
+.portfolio .entete h1 {
+    padding: 139px 0 0 168px;
+    font-family: Montserrat, sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A5B4FC;
+
+
+}
+
+.portfolio .photos {
+    padding: 0 168px;
+}
+
+.portfolio .photos h2 {
+    font-family: Manrope, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+
+}
+
+.portfolio .photos .ligne {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.portfolio .photos .ligne img:hover {
+    transform: scale(1.1);
+    border: 1px solid #A5B4FC;
+}
